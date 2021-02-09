@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIOS: ATRIBUTOS MÁS COMUNES</h1>
+<!--
+-placeholder -> da una pista de lo que el usuario tiene que introducir.
+
+-required -> hace que un campo sea obligatorio. Esta validación no se suele utilizar ya que el usuario puede desactivarla desde el navegador. Se suele validar desde el servidor o mediante JS.
+
+-readonly -> hace que un campo sea de sólo lectura. Al igual que el anterior, tb se puede modificar. No obstante, a nivel de información para el navegador, es conveniente ponerlo.
+
+-disabled -> desactiva el campo, no se podrá escribir en el autofocus y no se enviará con el resto de datos del formulario (a diferencia de READONLY, que sí se envía). Aparece sombreado.
+
+-min -max -> establece min y max de un campo numérico.
+
+-minlenght -maxlenght -> establece min y max de un campo de texto.
+
+-selected -> equivale a checked en los select. Sirve para establecer una opción port defecto.
+
+-autofocus -> para poner el foco por defecto al cargar el formulario.
+-->
+    <form>
+        <!-- al poner required nos obliga a no dejar el campo vacío -->
+        <input type="text" minlength="2" maxlength="10" placeholder="Introduce nombre" required autofocus>
+        <input type="text" value="hola" readonly>
+        <input type="text" value="hola" disabled>
+        <input type="number" min="3" max="10">
+        <select name="numbers" id="">
+            <option value="one">One</option>
+            <option value="two" selected>Two</option>
+        </select>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

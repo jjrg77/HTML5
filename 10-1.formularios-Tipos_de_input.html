@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+-button -> se comporta igual que un botón <button>. Este tipo de input NO sirve para enviar un formulario (para eso, más abajo se describe SUBMIT). Sirve para que realice alguna acción, la cual suele venir de JS.
+
+-color -> especifica un color.
+
+-date: introducir una fecha.
+
+-datetime -> OBSOLETO.
+
+-datetime-local -> fecha y hora, no funciona en firefox.
+
+-time -> introducción de hora.
+
+        *Se recomienda usar date y time para seleccionar fecha y hora. Así se podrá visualizar en todos los navegadores.
+
+-email -> se utiliza para introducir un email.
+
+-hidden -> campo oculto, puede contener un valor pero no se mostrará.
+
+-month -> se utiliza para introducir un mes.
+
+-number -> valores numéricos.
+
+-password -> se utiliza para contraseñas.
+
+-range -> establecer rango. tiene los siguintes atributos:
+            -step -> afecta al movimiento de la barra.
+            -min y max -> establecimiento de rangos min y max.
+
+-reset -> se utiliza para resetear el formulario.
+
+-search -> se utiliza para las barras de búsqueda.
+
+-submit -> envío de formulario.
+
+-tel -> introducción números de telf.
+
+-text -> valor por defecto.
+
+-url -> se utiliza para introducir URLs.
+
+-week -> introducción de número de semana del año.
+-->
+    <h1>FORMULARIOS: TIPOS DE INPUT</h1>
+
+    <form>
+        <input type="text">
+        <input type="button" value="sumar">
+        <input type="submit" value="enviar">
+    </form>
+
+    <form>
+        <input type="date">
+        <input type="time">
+    </form>
+
+    <form>
+        <input type="month"><br>
+        <label>
+            email
+            <input type="email">
+        </label><br>
+        
+        <label>
+            teléfono
+            <input type="tel">
+        </label>
+        
+    </form>
+
+    <form>
+        <label>
+            Search
+            <input type="search">
+        </label>
+    </form>
+
+  </body>
+</html>

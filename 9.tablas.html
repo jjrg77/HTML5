@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Las tablas en HTML5 sirven para mostrar contenido tabulado.
+
+        La estructura básica de una tabla se compone de:
+        -table -> Etiqueta que encierra una tabla.
+        -tr -> table row, etiqueta que construye una fila.
+        -td -> table data, etiqueta que construye una celda.
+
+        Truco: el nº de celdas (td) dentro de un tr establecerá el número de columnas de una tabla.
+
+        
+        Los títulos de las tablas se establecen con la etiqueta CAPTION, es una etiqueta opcional, se coloca justo despue´s de la etiqueta TABLE.
+
+        Las cabeceras de las tablas se establecen con la etiqueta THEAD. Dentro de éstas tndremos una etiqueta TR normal, pero las celdas las estableceremos con la etiqueta TH en vez de la etiqueta TD.
+
+        El contenido de la tabla debe ir dentro de una etiqueta TBODY para representar el cuerp de la tabla.
+
+        Opcionalmente se puede incluir un TFOOT, para establecer un pie de tabla (ésto se puede utilizar, por ejemplopara tablas que tienen suma de unas cantidades).
+
+        Para hecer que las celdas ocupen más de una fila o más de una columna tenemos dos atributos:
+            -rowspan -> sirve para que una celda ocupe más de una columna, el valor por defecto es 1.
+            -Colspan -> sirve para que una etiqueta ocupe más de una columna, el valor por defecto es 1.
+
+        Cuando necesitamos seleccionar una columna, tenemos la etiqueta COLGROUP, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas COL como columnas tengamos, cada etiqueta COL equivaldrá a una columna siguiendo el mismo orden que tienen en la tabla.
+
+        Si necesitamos que una etiqueta COL agrupe más de una columna, tenemos el atributo SPAN, que funciona exactamente igual que ROWSPAN y COLSPAN.
+     -->
+
+    <h1>TABLA</h1>
+    <table>
+        <h3><caption><strong>HORARIO ESCOLAR</strong></caption></h3><!-- TÍTULO  -->
+        <colgroup>
+            <col style="background: bisque;"> <!-- Le hemos añadido atributo STYLE para visualizar el efecto. Ésto debe hacerse mediante CSS3-->
+        </colgroup>
+         <thead> <!-- CABECERA  -->
+            <tbody> <!-- CUERPO DE TABLA  -->
+            <tr>
+                <th> </th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIÉRCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <td>8:30 - 9:30</td>
+            <td>Matemáticas</td>
+            <td>Lengua</td>
+            <td>Biología</td>
+            <td>Dibujo</td>
+            <td>Historia</td>
+        </tr>
+        <tr>
+            <td>9:30 - 10:30</td>
+            <td>Lengua</td>
+            <td>Historia</td>
+            <td>Biología</td>
+            <td>Historia</td>
+            <td>Dibujo</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:30</td>
+            <td>Dibujo</td>
+            <td>Lengua</td>
+            <td>Biología</td>
+            <td>Historia</td>
+            <td>Matemáticas</td>
+        </tr>
+        <tr>
+            <td>11:30 - 12:00</td>
+            <td colspan="5">RECREO</td>
+        </tr>
+        <tr>
+            <td>12:00 - 13:00</td>
+            <td>Dibujo</td>
+            <td>Lengua</td>
+            <td>Biología</td>
+            <td>Historia</td>
+            <td>Matemáticas</td>
+        </tr>
+        <tr>
+            <td>13:00 - 14:00</td>
+            <td>Matemáticas</td>
+            <td>Lengua</td>
+            <td>Biología</td>
+            <td>Dibujo</td>
+            <td>Historia</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6">C.P PABLO PICASSO</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

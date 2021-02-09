@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIOS: OTRAS ETIQUETAS</h1>
+<!-- 
+-fieldset -> se utiliza para agrupar elementos dentro de un foirmulario.
+
+-legend -> representa una etiqueta para el contenidop del fieldset.
+
+file -> este input se utiliza para cargar archivos y enviarlos desde un formulario.
+
+-meter -> representa un valkor dentro de un rango conocido.
+
+-progress -> representa el progreso de la tarea.
+
+textarea -> se utiliza para introducir texto en un formulario.
+-->
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label for="apell">Apellidos</label>
+                <input type="text" id="apell">
+            </div>
+        </fieldset>
+
+        <input type="file"> <!--Nos sirve para cargar archivo, se complementa con JS-->
+
+        <div>
+            <label for="fuel">Combustible</label>
+            <meter id="fuel" min="0" max="100" value="50">
+
+            </meter>
+        </div>
+
+        <label for="tarea">tarea 1</label>
+        <progress id="tarea" max="100" value="40"></progress>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+        
+    </form>
+</body>
+</html>

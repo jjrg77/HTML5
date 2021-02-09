@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>LISTAS</h1>
+    <!-- 
+        Hay tres tipos de listas: 
+        -ul -> unordened list: se utilizan cuando el orden de los elementos no influye (ej. lista de compra). Los menús de navegción se construyen con estas listas.
+        -ol -> ordened list: se utilizan cuando el orden de los elementos sí influye (ej. top 10).
+        -dl -> definition list: listas de definiciones (ej. diccionario). Éstas utilizan dos etiquetas, dt -> definition term, y dd -> descripción del término.
+
+        Se pueden construir listas anidadas, teniendo dentro de una etiqueta <li> otra ul/ol según sea necesario
+     -->
+    <section>
+      <h3>LISTAS DESORDENADAS</h3>
+
+      <ul>
+        <li>huevos</li>
+        <li>leche</li>
+        <li>azúcar</li>
+        <li>aceite</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>LISTAS ORDENADAS</h3>
+
+      <ol>
+        <li>huevos</li>
+        <li>leche</li>
+        <li>azúcar</li>
+        <li>aceite</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>LISTAS DE DEFINICIÓN</h3>
+
+      <dl>
+        <dt>HTML</dt>
+        <dd>
+          HiperText Markup Languaje: Es un lenguaje de marcado que se utiliza
+          para estructurar datos en una pág. WEB
+        </dd>
+      </dl>
+      <dl>
+        <dt>CSS</dt>
+        <dd>
+          Cascade Style Sheets: Es un lenguaje de diseño que se utiliza para dar
+          estilos al HTML
+        </dd>
+      </dl>
+      <dl>
+        <dt>JS</dt>
+        <dd>
+          JavaScript: Es un lenguaje de programación FRONT para dar
+          interactividad a un sitio WEB
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h3>LISTAS ANIDADAS</h3>
+      <ol>
+        <li>
+          pescadería
+          <ul>
+            <li>Merluza</li>
+            <li>Lenguado</li>
+            <li>Mero</li>
+            <li>Salmón</li>
+          </ul>
+        </li>
+        <li>
+          Carnicería
+          <ol>
+            <li>Filete de ternera</li>
+            <li>Hamburguesas</li>
+            <li>Costilla de cerdo</li>
+            <li>Solomillo de ternera</li>
+          </ol>
+        </li>
+          
+        </li>
+      </ol>
+    </section>
+  </body>
+</html>

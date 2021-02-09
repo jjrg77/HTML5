@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INPUTS DE SELECCIÓN</h1>
+<!-- 
+Inputs de selección:
+    -radio -> permite seleccionar una única opción de una lista de opciones relacionadas. La relación se hace a través del atributo NAME. Con el atributo booleano CHECKED podemos hacer que un radio aparezca marcado por defecto. Con el atributo VALUE describimos el valor de radio.
+
+    -checkbox -> permite seleccionar varias opciones de una lista de opciones relacionadas. El atributo CHECKED (a diferencia de radio) puede estar en varios de estos inputs.
+
+    -select -> crea una lista de opciones donde podemos seleccionar una o varias opciones. Cada opción irá dentro de una etiqueta <option> </option>. Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <optgroup> con el atributo LABEL para nombrar la categoría.
+
+    -datalist -> El elemento datalist representa una lista de opciones predefinidas que pueden ser utilizadas para proveer sugerencias.
+-->
+    <h3>radio</h3>
+    <form>
+        <label>
+            masculino
+            <input type="radio" name="genero" value="masculino"> 
+        </label>
+
+        <label>
+            femenino
+            <input type="radio" name="genero" value="femenino">
+        </label>
+
+        <label>
+            desconocido
+            <input type="radio" name="genero" value="desconocido" checked>
+        </label>
+    </form>
+
+    <h3>checkbox</h3>
+    <form>
+        <label>
+            HTML5
+            <input type="checkbox" name="lenguaje" value="html5" checked>
+        </label>
+
+        <label>
+            CSS3
+            <input type="checkbox" name="lenguaje" value="css3" checked>
+        </label>
+
+        <label>
+            JS
+            <input type="checkbox" name="lenguaje" value="js" checked>
+        </label>
+    </form>
+
+    <h3>select</h3>
+    <form>
+        <!-- así elegimos sólo 1 -->
+        <select name="lenguajes">
+            <option value="html">HTML5</option>
+            <option value="css3">CSS3</option>
+            <option value="js">JS</option>
+        </select>
+    </form><br>
+
+    <form>
+        <!-- así elegimos varios (pulsando CONTROL a la hora de seleccionarlos)-->
+        <select name="lenguajes" multiple>
+            <option value="html">HTML5</option>
+            <option value="css3">CSS3</option>
+            <option value="js">JS</option>
+        </select>
+    </form>
+
+    <h3>select ordenado por categorías</h3>
+    <form>
+        <select name="animales">
+            <optgroup label="mamíferos">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ballena">Ballena</option>
+            </optgroup>
+            <optgroup label="aves">
+                <option value="gaviota">Gaviota</option>
+                <option value="paloma">Paloma</option>
+                <option value="halcon">Halcón</option>
+            </optgroup>
+            <optgroup label="reptiles">
+                <option value="Serpiente">Perro</option>
+                <option value="Cocodrilo">Gato</option>
+                <option value="Salamandra">Ballena</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <h3>datalist</h3>
+    <input type="list" list="animales">
+    <datalist id="animales">
+        <option value="perro">aquí va posible descripción</option>
+        <option value="gato"></option>
+        <option value="ballena"></option>
+        <option value="gaviota"></option>
+        <option value="paloma"></option>
+        <option value="halcon"></option>
+    </datalist>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+Se clasifican en dos tipos:
+    1.Vectoriales: SVG (recomendado siempre que se pueda).  Se utilizan para logos, iconos de RRSS... no añaden casi peso al sitio web.
+
+    2.Mapa de Bits:
+        -jpg.
+        -png 8 y 24 (si se necesitan transparencias).
+        -gif (imagen animada).
+        -webp (es el formato que menos pesa). Lo desarrolló GOOGLE, es recomendable pasar a webp las imágenes jpg, png... siempre que se pueda. Admite transparencias y animación (gif).
+
+El atributo utilizado para indicar la ruta es SRC. En los navegadores modernos, existe el atributo SRCSET para adecuar la imagen a la pantalla desde la que se va a ver la WEB. Es necesario que tengamos las imágenes comprimidas para la versión movil.
+-->
+    <!-- <h1>IMÁGENES CON ATRIBUTO SRC</h1>
+    <img src="/assets/img/agua.webp" alt="imagen de agua" style="max-width: 100%;">
+    <img src="/assets/img/gif.webp" alt="fuegos artificiales">
+    <img src="/assets/img/facebook.svg" alt="logo de facebook"> -->
+
+    <h2>IMÁGENES CON ATRIBUTO SRCSET</h2>
+    <!-- <img alt="fuegos artificiales" srcset="/assets/img/bosque.webp, 
+    /assets/img/bosque_opt.jpg 3x"> -->
+    <img src="/assets/img/gif.gif" alt="foto bosque" srcset="/assets/img/bosque.webp 1x, 
+    /assets/img/agua.webp 2x, /assets/img/gif.gif 3x">
+
+</body>
+</html>
